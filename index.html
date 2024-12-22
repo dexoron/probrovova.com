@@ -14,28 +14,31 @@
         <p class="ml-4">main PROBROVOVA</p>
       </div>
       <div class="flex items-center">
-        <a href="/index.html" class="p-2 hover:bg-slate-700 rounded-lg mx-1">
+        <a
+          href="/index.html"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
+        >
           Главная
         </a>
         <a
           href="/pages/about.html"
-          class="p-2 hover:bg-slate-700 rounded-lg mx-1"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
         >
-          О мне
+          Обо мне
         </a>
         <a
           href="https://www.donationalerts.com/c/main_probrovova"
-          class="p-2 hover:bg-slate-700 rounded-lg mx-1"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
         >
           Поддержать
         </a>
         <a
           href="https://github.com/PROBROVOVAyt/PROBROVOVAyt"
-          class="p-2 hover:bg-slate-700 rounded-lg mx-1"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
         >
           GitHub
         </a>
-        <button class="p-2 hover:bg-slate-700 rounded-lg mx-1">
+        <button class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -51,15 +54,28 @@
     </nav>
     <!-- content -->
     <main class="">
-      <div class="flex">
+      <div class="flex flex-col md:flex-row items-center md:items-start">
         <img
           src="/static/img/icon.png"
-          class="bg-slate-950 rounded-lg size-64 flex-none"
+          class="bg-slate-950 rounded-lg w-64 h-64 flex-none mx-auto md:mx-0"
         />
-        <div class="bg-slate-800 p-4 rounded-lg flex-grow ml-4">
-          <p>Здравствуй мир!</p>
+        <div class="bg-slate-800 p-4 rounded-lg flex-grow mt-4 md:mt-0 md:ml-4">
+          <div class="text-center p-6 rounded-lg">
+            <p class="text-xl md:text-2xl font-bold text-gray-200 mb-4">
+              Добро пожаловать!
+            </p>
+            <p class="text-base md:text-lg text-gray-300 mb-4">
+              Здесь вы найдёте мои проекты, а также анонсы и гайды в будущем.
+            </p>
+            <p class="text-base md:text-lg text-gray-300">
+              Хотите узнать больше обо мне? Нажмите кнопку
+              <span class="text-blue-600 font-semibold">"Обо мне"</span>
+              в меню, где я рассказываю о себе и своих навыках.
+            </p>
+          </div>
         </div>
       </div>
+
       <!-- projects -->
       <div class="mt-16">
         <p class="text-center text-2xl">Проекты</p>
