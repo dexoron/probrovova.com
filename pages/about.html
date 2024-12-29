@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="shortcut icon"
+      href="/static/img/icon_bg.png"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main PROBROVOVA</title>
     <link rel="stylesheet" href="/static/css/main.css" />
   </head>
-  <body
-    class="bg-slate-900 text-white grid grid-cols-12 gap-4 mx-auto max-w-[1536px]"
-  >
+  <body class="bg-slate-900 text-white mx-auto max-w-[1024px] p-4">
     <!-- navigate -->
-    <nav
-      class="col-start-3 col-span-8 flex justify-between m-4 p-2 bg-slate-800 rounded-lg"
-    >
+    <nav class="flex justify-between mb-4 p-2 bg-slate-800 rounded-lg">
       <div class="flex items-center">
         <img src="/static/img/icon.png" class="size-10" />
+        <p class="ml-4">main PROBROVOVA</p>
       </div>
       <div class="flex items-center">
-        <a href="/index.html" class="p-2 hover:bg-slate-700 rounded-lg mx-1">
+        <a
+          href="/index.html"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
+        >
           Главная
         </a>
         <a
           href="/pages/about.html"
-          class="p-2 hover:bg-slate-700 rounded-lg mx-1"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
         >
-          О мне
+          Обо мне
         </a>
         <a
           href="https://www.donationalerts.com/c/main_probrovova"
-          class="p-2 hover:bg-slate-700 rounded-lg mx-1"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
         >
           Поддержать
         </a>
         <a
-          href="https://github.com/PROBROVOVAyt/PROBROVOVAyt"
-          class="p-2 hover:bg-slate-700 rounded-lg mx-1"
+          href="https://github.com/PROBROVOVAyt"
+          class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1"
         >
           GitHub
         </a>
-        <button class="p-2 hover:bg-slate-700 rounded-lg mx-1">
+        <button class="transition-all p-2 hover:bg-slate-700 rounded-lg mx-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -53,21 +58,129 @@
       </div>
     </nav>
     <!-- content -->
-    <main class="col-span-12">
-      <div
-        class="grid grid-cols-4 gap-4 grid-rows-4 sm:size-[640px] size-[360px] mx-auto"
-      >
-        <div class="bg-slate-950 rounded-lg col-span-2 row-span-2">
-          <img src="/static/img/icon.png" />
+    <main class="">
+      <div class="flex flex-col md:flex-row items-center md:items-start">
+        <div class="bg-slate-800 p-6 rounded-lg flex-grow mt-4 md:mt-0">
+          <div class="text-center p-6 rounded-lg">
+            <h2 class="text-xl md:text-3xl font-bold text-gray-200 mb-4">
+              Обо мне
+            </h2>
+            <h3 class="text-lg md:text-2xl font-bold text-gray-300 mb-4">
+              Кто я?
+            </h3>
+            <p class="text-base md:text-lg text-gray-300 mb-4">
+              Я программист, UI/UX-дизайнер, геймер и блогер. Родился в Иркутске, Россия. 
+              Увлекаюсь веб-разработкой, ведением YouTube и Twitch каналов (в прошлом), 
+              а также изучением языков программирования и технологий.
+            </p>
+            <h3 class="text-lg md:text-2xl font-bold text-gray-300 mb-4">
+              Какие языки программирования знаю?
+            </h3>
+            <p class="text-base md:text-lg text-gray-300 mb-4">
+              Владею Python, JavaScript, Java/Kotlin и поверхностно C/C#. 
+              Любимые языки: Python и Kotlin.
+            </p>
+            <h3 class="text-lg md:text-2xl font-bold text-gray-300 mb-4">
+              Какие технологии использую?
+            </h3>
+            <p class="text-base md:text-lg text-gray-300">
+              В веб-разработке применяю TailwindCSS, Vue/React, Flask/Django. 
+              Постоянно изучаю новые инструменты для улучшения разработки.
+            </p>
+          </div>
         </div>
-        <div class="bg-[#0d1117] rounded-lg col-span-2 row-span-2">
-          <p>Github</p>
-        </div>
-        <div class="bg-[#FF0000] rounded-lg col-span-2">YouTube</div>
-        <div class="bg-[#9146FF] rounded-lg col-span-2">Twitch</div>
       </div>
     </main>
+    
+
+      <!-- projects -->
+      <div class="mt-16">
+        <p class="text-center text-2xl">Мои проекты</p>
+        <div class="h-0.5 w-full my-4 bg-white"></div>
+        <div class="flex flex-wrap justify-center">
+          <!-- Project Carts -->
+          <div
+            class="w-60 flex flex-col bg-slate-800 p-2 rounded-lg float-left m-1"
+          >
+            <img
+              class="rounded-lg"
+              src="https://music.probrovova.com/static/img/icon.png"
+              alt=""
+            />
+            <p class="text-2xl text-center mt-2">mP music</p>
+            <p class="mt-2">
+              Далеко-далеко за, словесными горами в стране гласных и согласных
+              живут рыбные тексты. О проектах злых на берегу риторический
+              которое пояс большой, но, прямо эта!
+            </p>
+            <a
+              href="https://music.probrovova.com"
+              class="p-2 bg-slate-700 hover:bg-slate-800 transition-all rounded-lg text-center mt-2"
+              >Сайт</a
+            >
+            <a
+              href="https://github.com/PROBROVOVAyt/music.probrovova.com"
+              class="p-2 bg-slate-700 hover:bg-slate-800 transition-all rounded-lg text-center mt-2"
+              >GitHub</a
+            >
+          </div>
+          <!--  -->
+          <div
+            class="w-60 flex flex-col bg-slate-800 p-2 rounded-lg float-left m-1"
+          >
+            <img
+              class="rounded-lg"
+              src="https://tdo2.probrovova.com/static/img/icon.png"
+              alt=""
+            />
+            <p class="text-2xl text-center mt-2">TDO²</p>
+            <p class="mt-2">
+              Далеко-далеко за, словесными горами в стране гласных и согласных
+              живут рыбные тексты. Проектах злых на берегу реторический которое
+              пояс большой но, прямо эта!
+            </p>
+            <a
+              href="https://tdo2.probrovova.com"
+              class="p-2 bg-slate-700 hover:bg-slate-800 transition-all rounded-lg text-center mt-2"
+              >Сайт</a
+            >
+            <a
+              href="https://github.com/PROBROVOVAyt/tdo2.probrovova.com"
+              class="p-2 bg-slate-700 hover:bg-slate-800 transition-all rounded-lg text-center mt-2"
+              >GitHub</a
+            >
+          </div>
+          <!--  -->
+          <div
+            class="w-60 flex flex-col bg-slate-800 p-2 rounded-lg float-left m-1"
+          >
+            <img
+              class="rounded-lg"
+              src="https://fonts.probrovova.com/static/img/icon.png"
+              alt=""
+            />
+            <p class="text-2xl text-center mt-2">mP fonts</p>
+            <p class="mt-2">
+              Далеко-далеко за, словесными горами в стране гласных и согласных
+              живут рыбные тексты. Проектах злых на берегу реторический которое
+              пояс большой но, прямо эта!
+            </p>
+            <a
+              href="https://fonts.probrovova.com"
+              class="p-2 bg-slate-700 hover:bg-slate-800 transition-all rounded-lg text-center mt-2"
+              >Сайт</a
+            >
+            <a
+              href="https://github.com/PROBROVOVAyt/fonts.probrovova.com"
+              class="p-2 bg-slate-700 hover:bg-slate-800 transition-all rounded-lg text-center mt-2"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </main>
     <!-- footer -->
-    <footer class="col-span-12">&copy; main PROBROVOVA</footer>
+    <footer class="text-center mt-4">&copy; main PROBROVOVA</footer>
   </body>
 </html>
