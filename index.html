@@ -53,8 +53,169 @@
         /></div
     ></noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.RTB -->
+    <script>
+      window.yaContextCb = window.yaContextCb || [];
+    </script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.js"
+    ></script>
+    <!-- <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .cookie-notification {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 0;
+        width: 100%;
+        color: white;
+        padding: 15px;
+      }
+      .cookie-notification_hidden_yes {
+        display: none;
+      }
+      .cookie-notification__header {
+        margin-bottom: 10px;
+        font-size: 23px;
+      }
+      .cookie-notification__body {
+        margin-bottom: 10px;
+      }
+    </style> -->
   </head>
   <body class="bg-slate-900 text-white mx-auto max-w-[1024px] p-4">
+    <!-- Yandex.RTB R-A-13536294-1 -->
+    <div class="mb-4" id="yandex_rtb_R-A-13536294-1"></div>
+    <script>
+      window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+          blockId: "R-A-13536294-1",
+          renderTo: "yandex_rtb_R-A-13536294-1"
+        });
+      });
+    </script>
+    <!-- Оповешение об использовании Web аналитики -->
+    <div class="flex justify-center items-center max-w-[994px] h-screen fixed">
+      <div id="cookie-notification" class="bg-slate-950 p-4 rounded-2xl w-full">
+        <div class="">Мы используем Яндекс Метрику</div>
+        <div class="">
+          <p>
+            Этот сайт использует сервис веб-аналитики Яндекс Метрика,
+            предоставляемый компанией ООО «ЯНДЕКС», 119021, Россия, Москва, ул.
+            Л. Толстого, 16 (далее&nbsp;— Яндекс).
+          </p>
+          <p>
+            Сервис Яндекс Метрика использует технологию “cookie”&nbsp;—
+            небольшие текстовые файлы, размещаемые на компьютере пользователей с
+            целью анализа их пользовательской активности.
+          </p>
+          <p>
+            Собранная при помощи cookie информация не может идентифицировать
+            вас, однако может помочь нам улучшить работу нашего сайта.
+            Информация об использовании вами данного сайта, собранная при помощи
+            cookie, будет передаваться Яндексу и может храниться на серверах
+            Яндекса в РФ и/или в ЕЭЗ. Яндекс будет обрабатывать эту информацию в
+            интересах владельца сайта, в частности, для оценки использования
+            вами сайта, составления отчетов об активности на сайте. Яндекс
+            обрабатывает эту информацию в порядке, установленном в Условиях
+            использования сервиса Яндекс Метрика.
+          </p>
+          <p>
+            Вы можете отказаться от использования cookies, выбрав
+            соответствующие настройки в браузере. Также вы можете использовать
+            инструмент&nbsp;—
+            https://yandex.ru/support/metrika/general/opt-out.html Однако это
+            может повлиять на работу некоторых функций сайта. Используя этот
+            сайт, вы соглашаетесь на обработку данных о вас в порядке и целях,
+            указанных выше.
+          </p>
+        </div>
+        <div class="">
+          <button
+            class="p-2 bg-slate-700 hover:bg-slate-800 transition-all rounded-lg text-center mt-2"
+            id="yes"
+          >
+            Я согласен
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var messageElement = document.querySelector("#cookie-notification");
+      // Если нет cookies, то показываем плашку
+      if (!Cookies.get("agreement")) {
+        showMessage();
+      } else {
+        initCounter();
+      }
+      // Загружаем сам код счетчика сразу
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "//mc.yandex.ru/metrika/tag.js", "ym");
+      // Функция добавляет класс к DOM-элементу. Вы можете использовать библиотеку jQuery или другой фреймворк
+      function addClass(o, c) {
+        var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+        if (!o || re.test(o.className)) {
+          return;
+        }
+        o.className = (o.className + " " + c)
+          .replace(/\s+/g, " ")
+          .replace(/(^ | $)/g, "");
+      }
+      // Функция удаляет класс из DOM-элемента. Вы можете использовать библиотеку jQuery или другой фреймворк
+      function removeClass(o, c) {
+        var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+        if (!o) {
+          return;
+        }
+        o.className = o.className
+          .replace(re, "$1")
+          .replace(/\s+/g, " ")
+          .replace(/(^ | $)/g, "");
+      }
+      // Функция, которая прячет предупреждение
+      function hideMessage() {
+        addClass(messageElement, "hidden");
+      }
+      // Функция, которая показывает предупреждение
+      function showMessage() {
+        removeClass(messageElement, "hidden");
+      }
+      function saveAnswer() {
+        // Прячем предупреждение
+        hideMessage();
+
+        // Ставим cookies
+        Cookies.set("agreement", "1");
+      }
+      function initCounter() {
+        ym(99379102, "init", {});
+        saveAnswer();
+      }
+      // Нажатие кнопки "Я согласен"
+      document.querySelector("#yes").addEventListener("click", function () {
+        initCounter();
+      });
+    </script>
+    <!-- Оповешение об использовании Web аналитики КОНЕЦ -->
     <!-- navigate -->
     <nav class="flex justify-between mb-4 p-2 bg-slate-800 rounded-lg">
       <div class="flex items-center">
