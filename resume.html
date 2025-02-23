@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/static/img/logo.svg" type="image/x-icon" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ce4e4798b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-slate-900 text-slate-200 font-montserrat flex justify-center overflow-x-hidden h-full"
+  >
+    <div class="ball"></div>
+    <div class="max-w-320 w-full flex flex-col min-h-screen">
+      <!-- Nav -->
+      <nav class="flex justify-center sm:justify-between px-4 py-4 mt-4">
+        <div class="hidden sm:block">
+          <b class="text-4xl text-sky-400"><a href="/">Dexoron</a></b>
+        </div>
+        <div class="flex gap-4 self-center">
+          <a
+            href="./"
+            class="text-2xl hover:scale-105 hover:font-semibold hover:text-sky-400 transition-all"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-2xl underline underline-offset-8 hover:scale-105 font-semibold text-sky-400 transition-all"
+            >Resume</a
+          >
+          <a
+            href="./work.html"
+            class="text-2xl hover:scale-105 hover:font-semibold hover:text-sky-400 transition-all"
+            >Work</a
+          >
+        </div>
+      </nav>
+      <!-- Main -->
+      <main class="mt-4 px-4 flex-1 flex flex-col">
+        <p class="text-4xl font-semibold text-center">Resume</p>
+        <p class="text-2xl font-semibold text-center">Development...</p>
+      </main>
+      <!-- Header -->
+      <header class="flex flex-col px-4 py-8">
+        <b>&copy; Dexoron Studio</b>
+        <p>All rights reserved</p>
+      </header>
+      <script type="module" src="/static/js/cursor.js"></script>
+      <script src="/static/js/github.js"></script>
+    </div>
+  </body>
+</html>
